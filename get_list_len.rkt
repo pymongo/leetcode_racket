@@ -7,9 +7,10 @@
 (cdr a)
 
 (define (len _list)
-  (if (empty? _list) 0
+  (if (empty? _list)
+      0
       (+ 1 (len (cdr _list)))
-      )
+    )
   )
 (require racket/trace)
 (trace len)
