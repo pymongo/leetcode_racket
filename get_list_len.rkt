@@ -1,9 +1,9 @@
 #lang racket
 (define a '(1, 1+4i, #f))
 (list? a)
-; car get first of list, cadr/caddr get 2th/3th of list
+; car/first get first of list, cadr/caddr get 2th/3th of list
 (cadr a)
-; cdr get list exclude first
+; cdr/rest get list exclude first
 (cdr a)
 
 (define (len _list)
